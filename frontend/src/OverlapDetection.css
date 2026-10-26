@@ -1,0 +1,73 @@
+/* REPLACE PROJECT FILE: frontend/src/OverlapDetection.css */
+/* Destination: frontend/src/OverlapDetection.css */
+.overlap-page { display: grid; gap: 22px; animation: overlap-enter .42s ease both; }
+.overlap-title-row { align-items: center; }
+.overlap-scan-button { min-width: 190px; white-space: nowrap; }
+.overlap-explainer { display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px; border: 1px solid #dbe7ff; border-radius: 16px; background: linear-gradient(115deg, #f1f6ff 0%, #f4fcfb 100%); color: #183258; }
+.overlap-explainer-icon { display: grid; place-items: center; flex: 0 0 42px; height: 42px; border-radius: 13px; color: #315df5; background: #fff; border: 1px solid #dce7ff; }
+.overlap-explainer strong { display: block; font-size:16.5px; margin: 1px 0 5px; }
+.overlap-explainer p { margin: 0; color: #667b9c; font-size:15.3px; line-height: 1.65; max-width: 970px; }
+.overlap-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+.overlap-metrics article { padding: 18px 20px; background: #fff; border: 1px solid #e2e9f4; border-radius: 16px; box-shadow: 0 8px 24px rgba(21, 49, 90, .035); transition: transform .18s ease, box-shadow .18s ease; }
+.overlap-metrics article:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(21, 49, 90, .07); }
+.overlap-metrics article span, .overlap-metrics article small { display: block; color: #7184a2; font-size:14.2px; }
+.overlap-metrics article strong { display: block; color: #142b49; font-size:34.2px; letter-spacing: -.04em; margin: 7px 0 5px; }
+.overlap-alert { display: flex; align-items: flex-start; gap: 9px; border-radius: 12px; padding: 12px 15px; font-size:15.3px; line-height: 1.55; }
+.overlap-alert.error { color: #9d2735; border: 1px solid #f5cdd2; background: #fff5f5; }
+.overlap-alert.success { color: #176a53; border: 1px solid #c7eade; background: #f1fbf7; }
+.overlap-list-panel { background: #fff; border: 1px solid #e1e8f2; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 32px rgba(21, 49, 90, .035); }
+.overlap-list-toolbar { display: flex; gap: 22px; align-items: center; justify-content: space-between; padding: 22px 24px; border-bottom: 1px solid #e8edf5; }
+.overlap-list-toolbar h2 { margin: 0 0 5px; color: #172f50; font-size:21.2px; }
+.overlap-list-toolbar p { margin: 0; color: #7b8ba5; font-size:14.2px; }
+.overlap-controls { display: flex; align-items: end; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }
+.overlap-controls label { display: grid; gap: 6px; color: #637795; font-size:13px; font-weight: 700; }
+.overlap-controls select { min-width: 142px; min-height: 38px; border: 1px solid #dbe3ef; border-radius: 9px; background: #fff; padding: 0 10px; color: #243a58; font: inherit; font-size:14.2px; outline: none; }
+.overlap-controls select:focus { border-color: #6887ff; box-shadow: 0 0 0 3px rgba(81, 117, 255, .12); }
+.overlap-controls .secondary-button { min-height: 38px; display: inline-flex; align-items: center; gap: 7px; }
+.overlap-empty { display: grid; justify-items: center; gap: 10px; padding: 48px 22px; text-align: center; color: #7b8ca8; }
+.overlap-empty > svg { color: #7895da; }
+.overlap-empty strong { color: #203754; font-size:17.7px; }
+.overlap-empty span { max-width: 560px; font-size:14.2px; line-height: 1.7; }
+.overlap-empty .primary-button { margin-top: 5px; }
+.overlap-suggestion-list { display: grid; gap: 14px; padding: 18px; background: #f7f9fc; }
+.overlap-suggestion-card { min-width: 0; border: 1px solid #e1e8f2; background: #fff; border-radius: 16px; padding: 20px; animation: overlap-enter .3s ease both; }
+.overlap-suggestion-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 22px; padding-bottom: 17px; border-bottom: 1px solid #edf1f6; }
+.overlap-suggestion-top > div:first-child { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.overlap-review-pill { display: inline-flex; align-items: center; padding: 6px 9px; border-radius: 999px; font-size:11.8px; line-height: 1; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.overlap-review-pill.suggested { color: #94631b; background: #fff6e5; }
+.overlap-review-pill.confirmed { color: #176e55; background: #e7f8f0; }
+.overlap-review-pill.rejected { color: #9c3d48; background: #fff0f1; }
+.overlap-link-id { color: #8796ad; font-size:13px; }
+.overlap-confidence { width: min(100%, 240px); flex: 0 0 240px; }
+.overlap-confidence-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size:13px; color: #8290a5; }
+.overlap-confidence-top strong { color: #24436e; font-size:20.1px; }
+.overlap-confidence.high .overlap-confidence-top strong { color: #17775b; }
+.overlap-confidence.medium .overlap-confidence-top strong { color: #a36c19; }
+.overlap-confidence.low .overlap-confidence-top strong { color: #697b98; }
+.overlap-meter { height: 6px; overflow: hidden; background: #edf1f7; border-radius: 999px; margin: 7px 0 5px; }
+.overlap-meter span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #5278ff, #36bca9); transition: width .5s ease; }
+.overlap-confidence small { color: #9aa7b9; font-size:11.8px; }
+.overlap-case-pair { display: grid; grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr); align-items: stretch; gap: 12px; padding: 18px 0; }
+.overlap-case-summary { min-width: 0; padding: 16px; background: #fafcff; border: 1px solid #e8edf5; border-radius: 13px; }
+.overlap-case-label { display: block; margin-bottom: 8px; color: #7b8fae; font-size:10.6px; font-weight: 800; letter-spacing: .14em; }
+.overlap-case-summary > strong { display: block; color: #2a4770; font-size:13px; overflow-wrap: anywhere; }
+.overlap-case-summary h3 { margin: 9px 0 6px; color: #1c3454; font-size:16.5px; line-height: 1.45; overflow-wrap: anywhere; }
+.overlap-case-summary p { margin: 0; color: #788aa4; font-size:13px; line-height: 1.5; }
+.overlap-pair-icon { display: grid; place-items: center; color: #6380d8; }
+.overlap-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.overlap-tags > span:first-child { display: inline-flex; align-items: center; padding: 5px 7px; border: 1px solid #e0e8f3; border-radius: 7px; color: #637b9b; background: #fff; font-size:10.6px; font-weight: 700; }
+.overlap-tags .priority-pill { font-size:10.6px; }
+.overlap-evidence { display: flex; align-items: flex-start; gap: 10px; padding: 13px 15px; border: 1px solid #e0e9fc; border-radius: 11px; background: #f6f9ff; color: #5271b4; }
+.overlap-evidence > svg { flex: 0 0 auto; margin-top: 1px; }
+.overlap-evidence strong { display: block; color: #304d7b; font-size:13px; margin-bottom: 4px; }
+.overlap-evidence p { margin: 0; color: #7184a4; font-size:14.2px; line-height: 1.6; }
+.overlap-review-actions { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 15px; }
+.overlap-review-actions > span { color: #8a98ad; font-size:13px; }
+.overlap-review-actions > div { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.overlap-review-actions button { display: inline-flex; align-items: center; gap: 7px; }
+.overlap-review-actions .reject-button { color: #9b3d4b; border-color: #f0d4d8; background: #fff; }
+.overlap-review-actions .reject-button:hover { background: #fff4f5; }
+@keyframes overlap-enter { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) { .overlap-list-toolbar { align-items: flex-start; flex-direction: column; } .overlap-controls { justify-content: flex-start; } }
+@media (max-width: 650px) { .overlap-metrics { grid-template-columns: 1fr; } .overlap-title-row { align-items: flex-start; flex-direction: column; } .overlap-scan-button { width: 100%; justify-content: center; } .overlap-suggestion-top { flex-direction: column; } .overlap-confidence { width: 100%; flex-basis: auto; } .overlap-case-pair { grid-template-columns: 1fr; } .overlap-pair-icon { transform: rotate(90deg); } .overlap-review-actions { align-items: stretch; flex-direction: column; } .overlap-review-actions > div { justify-content: stretch; } .overlap-review-actions button { flex: 1; justify-content: center; } .overlap-controls { width: 100%; } .overlap-controls label, .overlap-controls select { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .overlap-page, .overlap-suggestion-card { animation: none; } .overlap-metrics article, .overlap-meter span { transition: none; } }

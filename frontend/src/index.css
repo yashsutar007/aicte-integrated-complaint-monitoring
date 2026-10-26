@@ -1,0 +1,32 @@
+/* REPLACE PROJECT FILE: frontend/src/index.css */
+/* Save this file as: frontend/src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'IBM Plex Sans', 'Segoe UI', Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #172337;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+html { min-width: 320px; min-height: 100%; scroll-behavior: smooth; }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+body, button, input { font-family: 'IBM Plex Sans', 'Segoe UI', Inter, ui-sans-serif, system-ui, sans-serif; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid rgba(56, 103, 237, .45); outline-offset: 2px; }
+#root { min-height: 100vh; }
+::selection { color: #10213a; background: #c8d7ff; }
+
+
+/* AikyaTrace accessible typography system */
+html { font-size: 16px; }
+body { font-size: 16px; line-height: 1.55; }
+h1, h2, h3, h4, .brand-name, .page-title, .page-title h1, .section-heading h2 {
+  font-family: 'Manrope', 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+button, input, select, textarea { font-size: inherit; }
+@media (max-width: 600px) { html { font-size: 15.5px; } }
